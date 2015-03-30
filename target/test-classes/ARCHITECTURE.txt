@@ -1,0 +1,20 @@
+Simple Explanation about Classes :
+
+
+By my Architecture understanding i have design 4 Classes for this problem.
+This is a Multi threading problem , where i have used my concepts of Threads, not using the new concepts packages on Java 7.
+My approach to this problem was considering 3 main Entities: Message, Gateway, Resource.
+
+Resource is an Entity where is locked and will notify Gateway.
+
+Gateway aggregates the Message object, and is locked with the Resource Entity.
+
+Message all the attributes about Message.  
+
+ResourceSchedular is a static class that uses, Singleton Pattern. 
+Shares the number of total Resources that can be configurable. Handles with Message Queue.
+Prioritize the Messages by GroupID using a Queue structure.
+
+
+ 
+ 
