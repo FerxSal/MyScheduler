@@ -1,10 +1,15 @@
 package myScheduler;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class ResourceSchedularMain {
 
 	
 	public static void main(String args[]){
 		
+		
+	  List myList = new ArrayList<String>();	
 	  ResourceSchedular rs = ResourceSchedular.getInstance();
 	  ResourceSchedular.setMyStaticMember(1);		
 	  System.out.println(ResourceSchedular.getResourceAvailable());

@@ -3,8 +3,7 @@ package myScheduler;
 public class Resource implements Runnable{
 
 	String resourceID;
-	private Gateway gateway;
-	ResourceSchedular rs; 
+	ResourceSchedular rs;
 	
     public Resource(String resourceID,ResourceSchedular rs){
        this.resourceID = resourceID;
@@ -20,13 +19,6 @@ public class Resource implements Runnable{
 		this.resourceID = resourceID;
 	}
 
-	public Gateway getGateway() {
-		return gateway;
-	}
-
-	public void setGateway(Gateway gateway) {
-		this.gateway = gateway;
-	}
 
 	public void run() {
 	

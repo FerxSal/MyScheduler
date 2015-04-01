@@ -13,7 +13,7 @@ Message all the attributes about Message.
 
 ResourceSchedular is a static class that uses, Singleton Pattern. 
 Shares the number of total Resources that can be configurable. Handles with Message Queue.
-Prioritize the Messages by GroupID using a Queue structure.
+Prioritize the Messages by GroupID using a Queue structure. The Queue structure could be a ConcurrentLinkedQueue
 
 
  
